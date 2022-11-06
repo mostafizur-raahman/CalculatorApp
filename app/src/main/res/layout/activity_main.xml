@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="130dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculator App"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/Text1"
+        android:drawableLeft="@drawable/number1"
+        android:drawablePadding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter First Number"
+        android:layout_margin="20dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/Text2"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="30dp"
+        android:drawableLeft="@drawable/number1"
+        android:drawablePadding="10dp"
+        android:hint="Enter second Number"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:onClick="add"
+            android:layout_weight=".25"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="30sp"/>
+        <Button
+            android:onClick="sub"
+            android:layout_weight=".25"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="30sp"/>
+        <Button
+            android:onClick="mul"
+            android:layout_weight=".25"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textSize="30sp"/>
+        <Button
+            android:onClick="div"
+            android:layout_weight=".25"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/showResult"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        />
+
+
+
+
+
+</LinearLayout>
